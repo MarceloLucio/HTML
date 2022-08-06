@@ -1,0 +1,18 @@
+@charset "UTF-8";
+body {
+    background-image: radial-gradient(circle, yellow 2%, red 25%, green 73%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+}
+h1 {
+    color: maroon;
+    background-color: goldenrod;
+}
+h2 {
+    color: darkred;
+
+}
+p {
+    text-align: justify;
+}

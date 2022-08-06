@@ -1,0 +1,28 @@
+body {
+ font: 12pt Arial;
+}
+p {
+    text-align: justify;
+    text-indent: 20pt;    
+}
+p.meio {
+    text-align: center;
+}
+p.dir {
+    text-align: left;
+}
+p.especial{
+    background-color: rgba(242, 255, 0, 0.468);
+}
+
+#titulo-principal{
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+}
+.topico {
+    text-align: right;
+}
+.texto {
+    text-align: justify;
+}

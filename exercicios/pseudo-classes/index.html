@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul{
+            list-style-position: inside;
+            columns: 3;
+        }
+        div > ul{
+            display: none;
+           
+        }
+        div:hover > ul{
+            display: block;
+            background-color: aquamarine;
+            width: 200px;
+            color: brown;
+        }
+        li > ul{
+            display: none;
+        }
+        li:hover > ul{
+            display: block;
+            
+        }
+        div:hover{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        passe o mouse aqui
+        <ul>
+            <li>
+                texto escondido
+                <ul>
+                    <li>achou </li>
+                </ul>
+            </li>
+            <li>Texto2
+                <ul>
+                    <li>achou </li>
+                </ul>
+            </li>
+            <li>Texto3
+                <ul>
+                    <li>achou </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
