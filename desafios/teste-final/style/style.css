@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'idroid' , cursive;
-    src: url('/teste-final/fontes/idroid.otf') format('opentype');
+    src: url('teste-final/fontes/idroid.otf') format('opentype');
 }
 
 :root{
@@ -31,8 +31,7 @@ header{
     background-image: linear-gradient(to top, var(--cor6), var(--cor4));
     color: white;
     min-height: 150px;
-    padding: 30px;
-    padding-bottom: 20px;
+    padding-top: 40px;
 }
 header > h1{
     font-family: var(--font-destaque);
@@ -40,7 +39,7 @@ header > h1{
     font-weight: normal;
     text-align: center;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.260);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 header > p{
     font-family: var(--font-padrao);
