@@ -36,6 +36,14 @@ header > h1{
     padding-bottom: 10px;
     padding-top: 10px ;
 }
+article > h1 > a{
+    text-decoration: none;
+    color: var(--cor4);
+}
+article > h1 > a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
 header p{
     text-align: center;
     font-size: 1.2em;
