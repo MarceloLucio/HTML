@@ -132,6 +132,7 @@ th.cabeçalho{
     border:  1px solid var(--cor4);
 }
 th > a.linktabela{
+    padding: 20px;
     text-decoration: none;
     color: var(--cor4);
 }
