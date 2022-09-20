@@ -213,14 +213,25 @@ div.boxlist{
     border-radius: 10px 10px 0px 0px;
 }
 div.boxlist > h2 > a{
-    text-decoration: underline wavy var(--cor0);
+    text-decoration: none var(--cor0);
     color: white;
+}
+div.boxlist > h2 > a:hover{
+    text-decoration: none;
+    color: var(--cor0);
+}
+div.boxlist > h2 > a::after{
+    content: '\00aA0\1F517';
 }
 ul{
     list-style-type: '\2714\00A0\00A0';
-    list-style-position: outside;
+    list-style-position: inside;
+}
+li{
+    padding: 3px;
 }
 .lista{
+    padding: 4px;
     text-decoration: none;
     color: var(--cor4);
     font-weight: bold ;
@@ -241,6 +252,9 @@ div.div2{
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.158);
     
+}
+#ex{
+    columns: 2;
 }
 abbr{
     text-decoration: none;  

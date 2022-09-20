@@ -26,3 +26,7 @@ p.especial{
 .texto {
     text-align: justify;
 }
+div.proxima{
+    text-align: right;
+    padding: 10px;
+}
