@@ -253,7 +253,7 @@ div.div2{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.158);
     
 }
-#ex{
+.ex{
     columns: 2;
 }
 abbr{
