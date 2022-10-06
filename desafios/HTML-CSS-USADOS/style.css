@@ -145,6 +145,7 @@ th{
     border: 1px solid black;
     background-color: var(--cor2);
     border-radius: 5px;
+    text-align: justify;
 }
 td{
     padding: 8px;
