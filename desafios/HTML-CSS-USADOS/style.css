@@ -123,6 +123,7 @@ table{
     letter-spacing: 1px;
     border: 1px solid var(--cor4);
     border-radius: 5px;
+
 }
 th.cabeçalho{
     background-color:var(--cor4) ;
@@ -155,42 +156,6 @@ td{
     text-indent: 30px;
     line-height: 1.5em;
     border-radius: 5px;
-}
-div.bloco1{
-    text-align: right;   
-    padding-top: 30px;
-}
-a.prox{
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.295) ;
-    text-align: right;
-    background-color: var(--cor4);
-    text-decoration: none;
-    color: var(--cor0);
-}
-a.prox:hover{
-    color: var(--cor4);
-    background-color: var(--cor0);
-    transition-delay: .2s;
-}
-div.bloco2{
-    text-align: left;
-    padding-top: 30px;
-}
-a.ant{
-    background-color: var(--cor4);
-    color: var(--cor0);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.295);
-    text-decoration: none;
-    
-}
-a.ant:hover{
-    color: var(--cor4);
-    background-color: var(--cor0);
-    transition-delay: .2s;
 }
 div.boxlist{
     background-color: var(--cor0);
