@@ -9,26 +9,34 @@ meus estudos!
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resumo HTML</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/telas.css">
+    <title>Resumo HTML</title>
 </head>
 
-<body>
+<body onresize="MudouTamanho()">
     <header>
         <h1>Tags e Propriedades usadas no projeto</h1>
         <p>Tudo de <strong><abbr title="HyperText Markup Language(LINGUAGEM DE MARCAÇÃO DE TEXTO)">HTML</abbr></strong>
             e <strong><abbr title="Cascading Style Sheet (Folha de estilo em cascata)">CSS</abbr></strong> que
             utilizei para concluir o projeto</p>
     </header>
-    <nav>
-        <a href="tags-propriedades.html">HTML</a> <a href="pag2.html">CSS</a> <a href="pag3.html">Anotações</a>
-        <a href="pag4.html">Exercícios</a> <a href="pag5.html">Desafios</a>
-    </nav>
+    <span class="material-symbols-outlined" id="burguer" onclick="menuBurguer()"> menu </span>
+    <menu id="lmenu">
+        <ul id="listaMenu">
+            <li><a href="tags-propriedades.html">HTML</a></li>
+            <li><a href="pag2.html">CSS</a></li>
+            <li><a href="pag3.html">Anotações</a></li>
+            <li><a href="pag4.html">Exercícios</a></li>
+            <li><a href="pag5.html">Desafios</a></li>
+        </ul>
+    </menu>
     <main>
         <article>
-            <h1>Tags de <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer"
-                    class="externo">HTML</a></h1>
+            <h1>Tags de <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"
+                    rel="noopener noreferrer" class="externo">HTML</a></h1>
 
             <p>Esses elementos seram utilizados na estrutura do site <a
                     href="file:///C:/Users/MARCELO/Documents/estudos/projeto-android/index.html" target="_blank"
@@ -142,6 +150,8 @@ meus estudos!
     <footer>
         <p>Feito por Marcelo Lúcio</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

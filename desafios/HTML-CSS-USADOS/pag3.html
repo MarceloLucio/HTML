@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anotações</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/telas.css">
+    <title>Anotações</title>
 </head>
 
 <body>
@@ -17,28 +19,39 @@
             e <strong><abbr title="Cascading Style Sheet (Folha de estilo em cascata)">CSS</abbr></strong> que
             utilizei para concluir o projeto</p>
     </header>
-    <nav>
-        <a href="tags-propriedades.html">HTML</a> <a href="pag2.html">CSS</a> <a href="pag3.html">Anotações</a>
-        <a href="pag4.html">Exercícios</a> <a href="pag5.html">Desafios</a>
-    </nav>
+    <span class="material-symbols-outlined" id="burguer" onclick="menuBurguer()"> menu </span>
+    <menu id="lmenu">
+        <ul id="listaMenu">
+            <li><a href="tags-propriedades.html">HTML</a></li>
+            <li><a href="pag2.html">CSS</a></li>
+            <li><a href="pag3.html">Anotações</a></li>
+            <li><a href="pag4.html">Exercícios</a></li>
+            <li><a href="pag5.html">Desafios</a></li>
+        </ul>
+    </menu>
     <main>
         <article>
             <h1>Anotações</h1>
             <p>Anotações para complementar e ajudar nos estudos/projetos</p>
             <div class="boxlist">
-                <h2 class="tituloboxlist"> Links usados no projeto <a href="C:\Users\MARCELO\Documents\HTML\desafios\testando123\android.html"
-                        class="externo" target="_blank">Android</a></h2>
+                <h2 class="tituloboxlist"> Links usados no projeto <a
+                        href="C:\Users\MARCELO\Documents\HTML\desafios\testando123\android.html" class="externo"
+                        target="_blank">Android</a></h2>
                 <ul>
                     <li><a href="https://androidcommunity.com/dan-morrill-shows-us-the-android-mascot-that-almost-was-20130103/"
-                            class="lista"  rel="noopener" target="_blank">Dan Morrill</a></li>
-                    <li><a class="lista" href="https://www.irinablok.com/android" rel="noopener" target="_blank">Irina Blok</a></li>
-                    <li><a class="lista" href="https://www.android.com/intl/en_uk/" rel="noopener" target="_blank">Android History
+                            class="lista" rel="noopener" target="_blank">Dan Morrill</a></li>
+                    <li><a class="lista" href="https://www.irinablok.com/android" rel="noopener" target="_blank">Irina
+                            Blok</a></li>
+                    <li><a class="lista" href="https://www.android.com/intl/en_uk/" rel="noopener"
+                            target="_blank">Android History
                         </a></li>
-                        <li><a class="lista" href="https://github.com/gustavoguanabara" rel="noopener" target="_blank">Gustavo Guanabara</a></li>
-                        <li><a class="lista" href="https://www.youtube.com/c/CursoemV%C3%ADdeo" rel="noopener" target="_blank">CursoemVideo</a></li>
+                    <li><a class="lista" href="https://github.com/gustavoguanabara" rel="noopener"
+                            target="_blank">Gustavo Guanabara</a></li>
+                    <li><a class="lista" href="https://www.youtube.com/c/CursoemV%C3%ADdeo" rel="noopener"
+                            target="_blank">CursoemVideo</a></li>
                 </ul>
             </div>
-           
+
             <div class="div2">
                 <h2 class="tituloboxlist">Cores usadas no projeto Android</h2>
                 <ul>
@@ -55,6 +68,8 @@
     </main>
 
     <footer>Feito por <strong>Marcelo Lúcio</strong></footer>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>

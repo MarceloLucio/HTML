@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/telas.css">
     <title>Resumo CSS</title>
 </head>
 
@@ -17,23 +19,29 @@
             e <strong><abbr title="Cascading Style Sheet (Folha de estilo em cascata)">CSS</abbr></strong> que
             utilizei para concluir o projeto</p>
     </header>
-    <nav>
-        <a href="tags-propriedades.html">HTML</a> <a href="pag2.html">CSS</a> <a href="pag3.html">Anotações</a>
-        <a href="pag4.html">Exercícios</a> <a href="pag5.html">Desafios</a>
-    </nav>
+    <span class="material-symbols-outlined" id="burguer" onclick="menuBurguer()"> menu </span>
+    <menu id="lmenu">
+        <ul id="listaMenu">
+            <li><a href="tags-propriedades.html">HTML</a></li>
+            <li><a href="pag2.html">CSS</a></li>
+            <li><a href="pag3.html">Anotações</a></li>
+            <li><a href="pag4.html">Exercícios</a></li>
+            <li><a href="pag5.html">Desafios</a></li>
+        </ul>
+    </menu>
     <main>
         <article>
             <h1>
-                Propriedades de <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
+                Propriedades de <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" rel="noopener"
                     target="_blank">CSS</a>
             </h1>
-            <p>Propriedades usadas para estilizar o site. <a
-                    href="file:///C:/Users/MARCELO/Documents/estudos/projeto-android/index.html" target="_blank"
+            <p>Propriedades usadas para estilizar o site.
+                <a href="file:///C:/Users/MARCELO/Documents/estudos/projeto-android/index.html" target="_blank"
                     class="externo">Android</a>
             </p>
 
             <table>
-                
+
                 <thead>
                     <tr>
                         <th class="cabeçalho">
@@ -47,23 +55,25 @@
                 <tbody>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@charset" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@charset" rel="noopener"
+                                class="linktabela" target="_blank">
                                 @charset</a>
                         </th>
                         <td>
                             A regra de CSS especifica a codificação de caracteres usada na folha de estilo. Deve ser o
-                            primeiro elemento da folha de estilo e não ser precedido por nenhum caractere; como não é uma
+                            primeiro elemento da folha de estilo e não ser precedido por nenhum caractere; como não é
+                            uma
                             instrução aninhada , não pode ser usada dentro do grupo condicional at-rules . Se forem
-                            definidas várias at-rules, apenas a primeira é usada, e não pode ser usada dentro de um atributo
+                            definidas várias at-rules, apenas a primeira é usada, e não pode ser usada dentro de um
+                            atributo
                             em um elemento HTML ou dentro do elemento onde o conjunto de caracteres da página HTML é
                             relevante.
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@import" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@import" rel="noopener"
+                                class="linktabela" target="_blank">
                                 @import</a>
                         </th>
                         <td>
@@ -75,13 +85,15 @@
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face" target="_blank"
-                                class="linktabela">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face" rel="noopener"
+                                target="_blank" class="linktabela">
                                 @font-face</a>
                         </th>
                         <td>
-                            A regra de CSS especifica uma fonte personalizada com a qual exibir o texto; a fonte pode ser
-                            carregada de um servidor remoto ou de uma fonte instalada localmente no próprio computador do
+                            A regra de CSS especifica uma fonte personalizada com a qual exibir o texto; a fonte pode
+                            ser
+                            carregada de um servidor remoto ou de uma fonte instalada localmente no próprio computador
+                            do
                             usuário.
                         </td>
                     </tr>
@@ -101,44 +113,48 @@
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover" rel="noopener"
+                                class="linktabela" target="_blank">
                                 :hover</a>
                         </th>
                         <td>
                             A pseudoclasse CSS corresponde quando o usuário interage com um elemento com um dispositivo
-                            apontador, mas não necessariamente o ativa. Geralmente é acionado quando o usuário passa o mouse
+                            apontador, mas não necessariamente o ativa. Geralmente é acionado quando o usuário passa o
+                            mouse
                             sobre um elemento com o cursor (ponteiro do mouse).
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::after" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::after" rel="noopener"
+                                class="linktabela" target="_blank">
                                 ::after</a>
                         </th>
                         <td>
-                            Em CSS, ::after cria um pseudoelemento que é o último filho do elemento selecionado. Geralmente
+                            Em CSS, ::after cria um pseudoelemento que é o último filho do elemento selecionado.
+                            Geralmente
                             é
-                            usado para adicionar conteúdo cosmético a um elemento com a contentpropriedade. É em linha por
+                            usado para adicionar conteúdo cosmético a um elemento com a contentpropriedade. É em linha
+                            por
                             padrão.
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" rel="noopener"
+                                class="linktabela" target="_blank">
                                 font-family</a>
                         </th>
                         <td>
-                            A font-family propriedade CSS especifica uma lista priorizada de um ou mais nomes de família de
+                            A font-family propriedade CSS especifica uma lista priorizada de um ou mais nomes de família
+                            de
                             fontes e/ou nomes de família genéricos para o elemento selecionado.
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" rel="noopener"
+                                class="linktabela" target="_blank">
                                 font-size</a>
                         </th>
                         <td>
@@ -148,19 +164,20 @@
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight" rel="noopener"
+                                class="linktabela" target="_blank">
                                 font-weight</a>
                         </th>
                         <td>
-                            A propriedade CSS define o peso (ou negrito) da fonte. Os pesos disponíveis dependem do que está
+                            A propriedade CSS define o peso (ou negrito) da fonte. Os pesos disponíveis dependem do que
+                            está
                             definido no momento
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" rel="noopener"
+                                class="linktabela" target="_blank">
                                 text-align</a>
                         </th>
                         <td>
@@ -171,44 +188,48 @@
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent" rel="noopener"
+                                class="linktabela" target="_blank">
                                 text-indent</a>
                         </th>
                         <td>
-                            A text-indent propriedade CSS define o comprimento do espaço vazio (recuo) que é colocado antes
+                            A text-indent propriedade CSS define o comprimento do espaço vazio (recuo) que é colocado
+                            antes
                             das linhas de texto em um bloco.
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration" rel="noopener"
+                                class="linktabela" target="_blank">
                                 text-decoration</a>
                         </th>
                         <td>
-                            A propriedade CSS abreviada define a aparência das linhas decorativas no texto. É uma abreviação
+                            A propriedade CSS abreviada define a aparência das linhas decorativas no texto. É uma
+                            abreviação
                             para , , e a propriedade mais recente.
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height" rel="noopener"
+                                class="linktabela" target="_blank">
                                 line-height
                             </a>
                         </th>
                         <td>
                             A propriedade CSS define a altura de uma caixa de linha. É comumente usado para definir a
-                            distância entre as linhas de texto. Em elementos de nível de bloco, especifica a altura mínima
-                            das caixas de linha dentro do elemento. Em elementos embutidos não substituídos , ele especifica
+                            distância entre as linhas de texto. Em elementos de nível de bloco, especifica a altura
+                            mínima
+                            das caixas de linha dentro do elemento. Em elementos embutidos não substituídos , ele
+                            especifica
                             a altura que é usada para calcular a altura da caixa de linha.line-height
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color" rel="noopener"
+                                class="linktabela" target="_blank">
                                 background-color</a>
                         </th>
                         <td>
@@ -217,8 +238,8 @@
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image" rel="noopener"
+                                class="linktabela" target="_blank">
                                 background-image</a>
                         </th>
                         <td>
@@ -227,20 +248,21 @@
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size" rel="noopener"
+                                class="linktabela" target="_blank">
                                 background-size
                             </a>
                         </th>
                         <td>
-                            A propriedade CSS define o tamanho da imagem de fundo do elemento. A imagem pode ser deixada em
+                            A propriedade CSS define o tamanho da imagem de fundo do elemento. A imagem pode ser deixada
+                            em
                             seu tamanho natural, esticada ou restringida para caber no espaço disponível.
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat" rel="noopener"
+                                class="linktabela" target="_blank">
                                 background-repeat
                             </a>
                         </th>
@@ -252,7 +274,7 @@
                     <tr>
                         <th>
                             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-position"
-                                class="linktabela" target="_blank">
+                                rel="noopener" class="linktabela" target="_blank">
                                 background-position
                             </a>
                         </th>
@@ -264,40 +286,43 @@
                     <tr>
                         <th>
                             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment"
-                                class="linktabela" target="_blank">
+                                rel="noopener" class="linktabela" target="_blank">
                                 background-attachment</a>
                         </th>
                         <td>
-                            A propriedade CSS define se a posição de uma imagem de plano de fundo é fixa na viewport ou rola
+                            A propriedade CSS define se a posição de uma imagem de plano de fundo é fixa na viewport ou
+                            rola
                             com o bloco que a contém.
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height" rel="noopener"
+                                class="linktabela" target="_blank">
                                 height</a>
                         </th>
-                        <td>A height propriedade CSS especifica a altura de um elemento. Por padrão, a propriedade define a
+                        <td>A height propriedade CSS especifica a altura de um elemento. Por padrão, a propriedade
+                            define a
                             altura da área de conteúdo . Se box-sizingestiver definido como border-box, no entanto, ele
                             determina a altura da área da borda.</td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width" class="linktabela"
-                                target="_blank">width</a>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width" rel="noopener"
+                                class="linktabela" target="_blank">width</a>
                         </th>
                         <td>
                             A width propriedade CSS define a largura de um elemento. Por padrão, ele define a largura da
                             área
-                            de conteúdo , mas se box-sizingestiver definido como border-box, ele define a largura da área da
+                            de conteúdo , mas se box-sizingestiver definido como border-box, ele define a largura da
+                            área da
                             borda.
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding" rel="noopener"
+                                class="linktabela" target="_blank">
                                 padding</a>
                         </th>
                         <td>
@@ -307,8 +332,8 @@
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" rel="noopener"
+                                class="linktabela" target="_blank">
                                 margin</a>
                         </th>
                         <td>
@@ -318,8 +343,8 @@
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius" rel="noopener"
+                                class="linktabela" target="_blank">
                                 border-radius</a>
                         </th>
                         <td>
@@ -329,63 +354,70 @@
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" rel="noopener"
+                                class="linktabela" target="_blank">
                                 box-shadow</a>
                         </th>
                         <td>
                             A propriedade CSS adiciona efeitos de sombra ao redor do quadro de um elemento. Você pode
-                            definir vários efeitos separados por vírgulas. Uma sombra de caixa é descrita por deslocamentos
+                            definir vários efeitos separados por vírgulas. Uma sombra de caixa é descrita por
+                            deslocamentos
                             X e Y em relação ao elemento, raio de desfoque e dispersão e cor.
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" rel="noopener"
+                                class="linktabela" target="_blank">
                                 postion</a>
                         </th>
                         <td>
-                            A propriedade CSS define como um elemento é posicionado em um documento. As propriedades , , e
+                            A propriedade CSS define como um elemento é posicionado em um documento. As propriedades , ,
+                            e
                             determinam a localização final dos elementos posicionados.
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/left" class="linktabela"
-                                target="_blank">Left</a> / <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/top"
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/left" rel="noopener"
+                                class="linktabela" target="_blank">Left</a> / <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/CSS/top" rel="noopener"
                                 class="linktabela" target="_blank">Top</a>
                         </th>
                         <td>
-                            A propriedade CSS participa da especificação da posição horizontal de um elemento posicionado .
+                            A propriedade CSS participa da especificação da posição horizontal de um elemento
+                            posicionado .
                             Não tem efeito em elementos não posicionados.
                         </td>
                     </tr>
                     <tr>
-                        <th><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" class="linktabela"
-                                target="_blank">
+                        <th><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" rel="noopener"
+                                class="linktabela" target="_blank">
                                 transform</a></th>
                         <td>
-                            A propriedade CSS permite girar, dimensionar, inclinar ou traduzir um elemento. Ele modifica o
+                            A propriedade CSS permite girar, dimensionar, inclinar ou traduzir um elemento. Ele modifica
+                            o
                             espaço de coordenadas do modelo de formatação visual CSS .
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" class="linktabela"
-                                target="_blank">display</a>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" rel="noopener"
+                                class="linktabela" target="_blank">display</a>
                         </th>
                         <td>
-                            Uma propriedade CSS display especifica o tipo de caixa de renderização usada por um elemento. No
+                            Uma propriedade CSS display especifica o tipo de caixa de renderização usada por um
+                            elemento. No
                             HTML, os padrões da propriedade display são feitos a partir do comportamento descrito nas
-                            especificações HTML ou da folha de estilo padrão do navegador/usuário. O valor padrão em XML é
+                            especificações HTML ou da folha de estilo padrão do navegador/usuário. O valor padrão em XML
+                            é
                             inline.
                         </td>
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type" rel="noopener"
+                                class="linktabela" target="_blank">
                                 list-style-type</a>
                         </th>
                         <td>
@@ -396,7 +428,7 @@
                     <tr>
                         <th>
                             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position"
-                                class="linktabela" target="_blank">
+                                rel="noopener" class="linktabela" target="_blank">
                                 list-style-position</a>
                         </th>
                         <td>
@@ -405,12 +437,13 @@
                     </tr>
                     <tr>
                         <th>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/columns" class="linktabela"
-                                target="_blank">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/columns" rel="noopener"
+                                class="linktabela" target="_blank">
                                 columns</a>
                         </th>
                         <td>
-                            A propriedade abreviada CSS define o número de colunas a serem usadas ao desenhar o conteúdo de
+                            A propriedade abreviada CSS define o número de colunas a serem usadas ao desenhar o conteúdo
+                            de
                             um elemento, bem como as larguras dessas colunas.
                         </td>
                     </tr>
@@ -429,6 +462,8 @@
         </article>
     </main>
     <footer>Feito por <strong>Marcelo Lúcio</strong></footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
